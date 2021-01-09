@@ -1,4 +1,4 @@
-name: "PR checklist"
+name: "Checklist"
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 jobs:
   checklist_job:
     runs-on: ubuntu-latest
-    name: A job to create dynamic checklist
+    name: Create Dynamic Checklist
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
