@@ -1,0 +1,19 @@
+name: "PR checklist"
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  checklist_job:
+    runs-on: ubuntu-latest
+    name: A job to create dynamic checklist
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Dynamic checklist action
+        uses: moonrisedev/pr-checklists@v2
+        with:
+          mappingFile: '.github/checklist-triggers.json'
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

@@ -1,0 +1,24 @@
+{
+  "mappings": [
+    {
+      "keywords": ["queryInterface.sequelize.query"],
+      "comment": "Added the SQL UPDATES tag"
+    },
+    {
+      "keywords": ["queryInterface.sequelize.query"],
+      "comment": "put any necessary migrations in the PR body"
+    },
+    {
+      "keywords": ["queryInterface.sequelize.query"],
+      "comment": "added any data needing deidenitifcation to the local_prod_data lambda filter"
+    },
+    {
+      "keywords": ["package.json", "package-lock.json", "composer.json", "composer.lock"],
+      "comment": "added dependency update tag"
+    },
+    {
+      "keywords": ["development.env"],
+      "comment": "updated server environment variables (if necessary)"
+    }
+  ]
+}
