@@ -4,7 +4,7 @@
       "triggers": ["queryInterface.sequelize.query"],
       "items": [
         "Added the SQL UPDATES tag",
-        "put any necessary migrations in the PR body"
+        "put any necessary migrations in the PR body",
         "added any data needing deidenitifcation to the local_prod_data lambda filter"
       ]
     },
