@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/iethree/express-shell#readme",
   "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
     "express": "^4.17.1",
     "logchalk": "^1.0.1",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "papaparse": "^5.3.0"
   }
 }
