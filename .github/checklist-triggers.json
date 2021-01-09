@@ -1,24 +1,24 @@
 {
   "mappings": [
     {
-      "keywords": ["queryInterface.sequelize.query"],
-      "comment": "Added the SQL UPDATES tag"
+      "triggers": ["queryInterface.sequelize.query"],
+      "items": [
+        "Added the SQL UPDATES tag",
+        "put any necessary migrations in the PR body"
+        "added any data needing deidenitifcation to the local_prod_data lambda filter"
+      ]
     },
     {
-      "keywords": ["queryInterface.sequelize.query"],
-      "comment": "put any necessary migrations in the PR body"
+      "triggers": ["package.json", "package-lock.json", "composer.json", "composer.lock"],
+      "items": ["added dependency update tag"]
     },
     {
-      "keywords": ["queryInterface.sequelize.query"],
-      "comment": "added any data needing deidenitifcation to the local_prod_data lambda filter"
+      "triggers": [".env"],
+      "items": ["updated server environment variables (if necessary)"]
     },
     {
-      "keywords": ["package.json", "package-lock.json", "composer.json", "composer.lock"],
-      "comment": "added dependency update tag"
-    },
-    {
-      "keywords": ["development.env"],
-      "comment": "updated server environment variables (if necessary)"
+      "triggers": ["docs/"],
+      "items": ["notified team of documentation updates"]
     }
   ]
 }

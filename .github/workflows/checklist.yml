@@ -7,13 +7,14 @@ on:
 jobs:
   checklist_job:
     runs-on: ubuntu-latest
-    name: Create Dynamic Checklist
+    name: Create Dynamic PR Checklist
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Dynamic checklist action
-        uses: moonrisedev/pr-checklists@v2
+        uses: moonrisedev/pr-checklists@v2.1
         with:
-          mappingFile: '.github/checklist-triggers.json'
+          config: '.github/checklist-triggers.json'
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          ACTIONS_STEP_DEBUG: true
