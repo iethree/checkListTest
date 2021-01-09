@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Dynamic checklist action
-        uses: moonrisedev/pr-checklists@v2.1a
+        uses: moonrisedev/pr-checklists@v2.2a
         with:
           config: '.github/checklist-triggers.json'
         env:
